@@ -1,0 +1,158 @@
+@font-face {
+    font-family: 'Norse';
+    src: url('Norse-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --form-background-color: #f9fafb;
+    --buttonColor: #596d48;
+    --formHeaderColor: #474f5b;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.page {
+    color: black;   
+    display: flex;
+    height: 100vh;
+}
+
+.background-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.image-container {
+    height: 100vh;
+    width: 40vw; 
+    overflow: hidden;
+    position: relative;
+}
+
+.image-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 20vh;
+    width: 100%;
+    height: 15vh;
+}
+.image-text {
+    font-size: 2.5rem;
+    font-family: 'Norse', sans-serif;
+    color: white;
+}
+
+.logo {
+    height: 12vh;
+}
+
+.form-section {
+    height: 100vh;
+    background-color: var(--form-background-color);
+    width: 60vw;
+    font-family: "Rubik", sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-text {
+    font-weight: 600;
+    margin-left: 1.5rem;
+    margin-right: 3rem;
+    margin-top: 3rem;
+    font-size: 0.65rem;
+}
+
+.tagline {
+    margin-top: 1rem;
+}
+
+.form-div {
+    background-color: white;
+    margin-top: 1.5rem;
+    padding: 0.5rem 1.5rem;
+    padding-right: 5rem;
+    height: 34vh;
+    box-shadow: 0px 2px 3px 0.5px #d7d7d7;
+}
+
+.form-heading {
+    font-size: 0.75rem;
+    color: var(--formHeaderColor);
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+label {
+    font-size: 6px;
+    color: var(--formHeaderColor);
+    font-weight: bold;
+    letter-spacing: 0.7px;
+    display: block;
+    margin-bottom: -3px;
+}
+
+input {
+    height: 0.8rem;
+    width: 17vw;
+    font-size: 7px;
+    border: 1px solid #E5E7EB;
+    border-radius: 3px;
+    padding: 2px;
+}
+
+input[type=password]:invalid {
+    border: 1px solid rgb(202, 111, 111);
+}
+
+input:focus {
+    outline: 1.5px solid #93aaec;
+    box-shadow: 1px 1px 3px 1px #d7d7d7;
+}
+
+.form-row {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 0.7rem;
+}
+
+.create-account-btn {
+    border: none;
+    background-color: #596d48;
+    border-radius: 3px;
+    color: white;
+    height: 1.5rem;
+    width: 7rem;
+    font-size: 8px;
+
+    margin-left: 1.5rem;
+    margin-top: 1rem
+}
+
+.log-in-link {
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+    font-size: 8px;
+}
+
+.log-in {
+    color:#596d48;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.log-in:hover {
+    text-decoration: underline;
+}
